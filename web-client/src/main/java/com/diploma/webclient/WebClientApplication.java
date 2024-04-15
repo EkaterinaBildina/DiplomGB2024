@@ -1,14 +1,13 @@
-package com.diploma.configserver;
+package com.diploma.webclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableConfigServer
-public class ConfigServerApplication {
+public class WebClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigServerApplication.class, args);
+		SpringApplication.run(WebClientApplication.class, args);
 	}
 
 }
