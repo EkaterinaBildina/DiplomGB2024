@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: eserver
+    name: eureka-server
   config:
     import: config-server:http://localhost:8085
   profiles:

@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: web-client
+
+  config:
+    import: config-server:http://localhost:8085
