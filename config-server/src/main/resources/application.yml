@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        composite:
+          - type: native
+            searchLocations: file:D:/DiplomGB2024/src/ain/resources/
