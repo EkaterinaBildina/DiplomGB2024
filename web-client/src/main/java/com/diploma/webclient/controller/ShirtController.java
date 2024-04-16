@@ -14,12 +14,4 @@ public class ShirtController {
         return  "Заказ создан успешно! " + shirtConstructor.toString();
     }
 
-    @PostMapping("/amount")
-    public double getAmount(@RequestBody ShirtConstructor shirtConstructor) {
-        Pattern patternInOrder = shirtConstructor.getPattern();
-        Textile textileInOrder = shirtConstructor.getTextile();
-        shirtConstructor.setAmount(patternInOrder.getPrice + patternInOrder.getConsumption * textileInOrder.getPrice());
-        Double orderAmount = shirtConstructor.getAmount();
-        return orderAmount;
-    }
 }
