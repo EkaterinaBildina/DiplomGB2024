@@ -29,7 +29,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mention annotated entity class -->
-        <mapping class="db-pattern.Pattern"/>
+        <mapping class="db-textile.Textile"/>
 
     </session-factory>
 </hibernate-configuration>

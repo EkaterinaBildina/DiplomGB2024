@@ -1,7 +1,6 @@
 package com.diploma.dbpatterns.controller;
 
 import com.diploma.dbpatterns.model.Pattern;
-import com.diploma.dbpatterns.repository.PatternRepository;
 import com.diploma.dbpatterns.service.PatternService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

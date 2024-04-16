@@ -1,0 +1,1 @@
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3366/shirtstore"/>
