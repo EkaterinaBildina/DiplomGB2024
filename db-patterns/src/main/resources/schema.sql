@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS patterns_db (
+CREATE TABLE IF NOT EXISTS patterns_db_2024 (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     size INT NOT NULL,
@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS patterns_db (
     price DECIMAL(10, 2) NOT NULL
 
 );
+

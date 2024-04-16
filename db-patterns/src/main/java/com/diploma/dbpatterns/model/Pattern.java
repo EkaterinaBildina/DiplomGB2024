@@ -13,7 +13,7 @@ public class Pattern {
     private String name;
     private int size; //размер 42,44,46,48,50,52
     private int consumption; // расход ткани 1.4,1.4,1.6,1.6,1.8,1.8
-    private double price; // цена + Textile(1m)*расход ткани(размер)
+    private double price; // цена за работу конкретной модели (Не учтено Textile(1m)*расход ткани(размер))
 
     public Long getId() {
         return id;

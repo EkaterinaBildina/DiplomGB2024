@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: web-client
+    name: webclient
 
   config:
-    import: config-server:http://localhost:8085
+    import: configserver:http://localhost:8085

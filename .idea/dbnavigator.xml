@@ -9,6 +9,24 @@
     <value-preview-text-wrapping value="true" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DataExportManager">
+    <export-instructions>
+      <create-header value="true" />
+      <friendly-headers value="false" />
+      <quote-values-containing-separator value="true" />
+      <quote-all-values value="false" />
+      <value-separator value="" />
+      <begin-quote value="&quot;" />
+      <end-quote value="&quot;" />
+      <file-name value="" />
+      <file-location value="" />
+      <scope value="GLOBAL" />
+      <destination value="FILE" />
+      <format value="EXCEL" />
+      <charset value="windows-1251" />
+      <charset value="windows-1251" />
+    </export-instructions>
+  </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
@@ -27,9 +45,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="638eea43-6895-4a14-85cc-af9558c81a68" object-ref="schemas/mysql/tables/textile_db" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="dd2c046c-9104-4be2-8a6b-3dc89fc2189f" />
@@ -39,8 +55,8 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/db-patterns/src/main/resources/schema.sql" connection-id="dd2c046c-9104-4be2-8a6b-3dc89fc2189f" session-id="MAIN" current-schema="mysql" />
-    <mapping file-url="file://$PROJECT_DIR$/db-textile/src/main/resources/data.sql" connection-id="638eea43-6895-4a14-85cc-af9558c81a68" session-id="MAIN" current-schema="mysql" />
+    <mapping file-url="file://$PROJECT_DIR$/db-patterns/src/main/resources/schema.sql" connection-id="638eea43-6895-4a14-85cc-af9558c81a68" session-id="MAIN" current-schema="mysql" />
+    <mapping file-url="file://$PROJECT_DIR$/db-textile/src/main/resources/data.sql" connection-id="638eea43-6895-4a14-85cc-af9558c81a68" session-id="POOL" current-schema="mysql" />
     <mapping file-url="file://$PROJECT_DIR$/db-textile/src/main/resources/schema.sql" connection-id="638eea43-6895-4a14-85cc-af9558c81a68" session-id="MAIN" current-schema="mysql" />
     <mapping file-url="file://$PROJECT_DIR$/db-patterns/src/main/resources/data.sql" connection-id="638eea43-6895-4a14-85cc-af9558c81a68" session-id="MAIN" current-schema="mysql" />
     <mapping file-url="file://$PROJECT_DIR$/db-patterns" connection-id="virtual-mysql-connection" session-id="" current-schema="" />
@@ -50,7 +66,9 @@
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -67,7 +85,7 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="3366" />
-          <database value="ShirtStore" />
+          <database value="mysql" />
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
@@ -75,7 +93,7 @@
           <deprecated-pwd value="YWRtaW4=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
@@ -169,7 +187,7 @@
           <deprecated-pwd value="YWRtaW4=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
@@ -639,7 +657,9 @@
     </general-settings>
   </component>
   <component name="DBNavigator.Project.StatementExecutionManager">
-    <execution-variables />
+    <execution-variables>
+      <file file-url="file://$PROJECT_DIR$/db-patterns/src/main/resources/schema.sql" />
+    </execution-variables>
     <execution-variable-types />
   </component>
 </project>

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: api-gateway
+    name: apigateway
   profiles:
     active: eclient
 
