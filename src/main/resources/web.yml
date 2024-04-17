@@ -4,17 +4,20 @@ spring:
       client:
         config:
           payment:
-            url: http://localhost:8765/payment
-          storage:
-            url: http://localhost:8765/storage
+            url: http://localhost:8081/payment
+          patternsew:
+            url: http://localhost:8066/patterns
+          textile:
+            url: http://localhost:8067/textile
 
 api:
   basic-uri:
-    storage: http://localhost:8765/storage/
-    payment: http://localhost:8765/payment/
+    payment: http://localhost:8081/payment/
+    patternsew: http://localhost:8066/patterns
+    textile: http://localhost:8067/textile
 
 shop:
   account:
     number: 3
 
-tmpVar: configServer
+tmpVar: configserver

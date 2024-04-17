@@ -8,6 +8,7 @@ spring:
   cloud:
     config:
       server:
+        bootstrap: true
         composite:
           - type: native
-            searchLocations: file:D:/DiplomGB2024/src/ain/resources/
+            searchlocations: file://D:/DiplomGB2024/src/main/resources
