@@ -1,6 +1,6 @@
 package com.diploma.dbpatterns.service;
 
-import com.diploma.dbpatterns.model.Pattern;
+import com.diploma.dbpatterns.model.PatternSew;
 import com.diploma.dbpatterns.repository.PatternRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class PatternService {
      * @param pattern
      * @return сохраненный объект
      */
-    public Pattern addPattern(Pattern pattern) {
+    public PatternSew addPattern(PatternSew pattern) {
         return patternRepository.save(pattern);
     }
 
@@ -32,7 +32,7 @@ public class PatternService {
      * Получение списка всех выкроек
      * @return список
      */
-    public List<Pattern> getAllPatterns() {
+    public List<PatternSew> getAllPatterns() {
         return patternRepository.findAll();
     }
 
@@ -43,8 +43,8 @@ public class PatternService {
      * возможно изменить имя и стоимость
      * @return сохраненный объекта
      */
-    public Pattern updatePattern(Long id, Pattern pattern) {
-        Pattern existingPattern= patternRepository.findById(id).orElseThrow();
+    public PatternSew updatePattern(Long id, PatternSew pattern) {
+        PatternSew existingPattern= patternRepository.findById(id).orElseThrow();
         existingPattern.setName(pattern.getName());
         existingPattern.setPrice(pattern.getPrice());
         return patternRepository.save(existingPattern);
@@ -54,7 +54,7 @@ public class PatternService {
         patternRepository.deleteById(id);
     }
 
-    public Optional<Pattern> findById(Long id) {
+    public Optional<PatternSew> findById(Long id) {
         return patternRepository.findById(id);
     }
 }

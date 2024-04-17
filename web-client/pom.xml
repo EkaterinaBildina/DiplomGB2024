@@ -77,8 +77,14 @@
             <version>24.1.0</version>
             <scope>compile</scope>
         </dependency>
+		<dependency>
+			<groupId>com.diploma</groupId>
+			<artifactId>db-patterns</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
 
-    </dependencies>
+	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>

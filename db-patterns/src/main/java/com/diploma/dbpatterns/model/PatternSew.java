@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Pattern {
+public class PatternSew {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

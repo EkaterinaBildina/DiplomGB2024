@@ -1,6 +1,6 @@
 package com.diploma.dbpatterns.controller;
 
-import com.diploma.dbpatterns.model.Pattern;
+import com.diploma.dbpatterns.model.PatternSew;
 import com.diploma.dbpatterns.service.PatternService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +28,8 @@ public class PatternController {
      * @return
      */
     @PostMapping("/addNew")
-    public ResponseEntity<Pattern> addPattern(@RequestBody Pattern pattern) {
-        Pattern newPattern = patternService.addPattern(pattern);
+    public ResponseEntity<PatternSew> addPattern(@RequestBody PatternSew pattern) {
+        PatternSew newPattern = patternService.addPattern(pattern);
         return ResponseEntity.ok(newPattern);
     }
 
@@ -38,8 +38,8 @@ public class PatternController {
      * @return список выкроек
      */
     @GetMapping("/get-all")
-    public ResponseEntity<List<Pattern>> getAllPatterns() {
-        List<Pattern> patterns = patternService.getAllPatterns();
+    public ResponseEntity<List<PatternSew>> getAllPatterns() {
+        List<PatternSew> patterns = patternService.getAllPatterns();
         return ResponseEntity.ok(patterns);
     }
 
@@ -49,7 +49,7 @@ public class PatternController {
      * @return объект выкройки по идентификатору
      */
     @GetMapping("/{id}")
-    public Optional<Pattern> getPatternById(@PathVariable Long id) {
+    public Optional<PatternSew> getPatternById(@PathVariable Long id) {
         return patternService.findById(id);
     }
 
@@ -61,8 +61,8 @@ public class PatternController {
      */
 
     @PutMapping("/{id}")
-    public ResponseEntity<Pattern> updatePattern(@PathVariable Long id, @RequestBody Pattern pattern) {
-        Pattern updatedPattern = patternService.updatePattern(id, pattern);
+    public ResponseEntity<PatternSew> updatePattern(@PathVariable Long id, @RequestBody PatternSew pattern) {
+        PatternSew updatedPattern = patternService.updatePattern(id, pattern);
         return ResponseEntity.ok(updatedPattern);
     }
 
