@@ -1,1 +1,1 @@
-<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://hostname:port/database_name"/>
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3366/patterns"/>

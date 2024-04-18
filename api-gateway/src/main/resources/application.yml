@@ -1,17 +1,16 @@
 server:
-  port: 8081
+  port: 8768
 
 spring:
   application:
-    name: apigateway
+    name: api-gateway
   profiles:
     active: eclient
-
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
-    config:
-      import: configserver:http://localhost:8085
+  config:
+    import: configserver:http://localhost:8888

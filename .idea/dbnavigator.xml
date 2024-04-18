@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -42,10 +42,24 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="638eea43-6895-4a14-85cc-af9558c81a68" object-ref="schemas/mysql/tables/patterns_db_2024" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="638eea43-6895-4a14-85cc-af9558c81a68" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="638eea43-6895-4a14-85cc-af9558c81a68" dataset="mysql.textile_db_2024" active-filter-id="EMPTY_FILTER">
+      <filter id="84b67134-2af3-4d34-9fa1-8eae9e938b57" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="638eea43-6895-4a14-85cc-af9558c81a68" dataset="mysql.patterns_db_2024" active-filter-id="EMPTY_FILTER">
+      <filter id="1cbf7676-fe21-4093-a86d-6955b07f0c5a" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
