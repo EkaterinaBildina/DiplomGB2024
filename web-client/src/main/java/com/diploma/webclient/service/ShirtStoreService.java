@@ -7,13 +7,11 @@ import com.diploma.webclient.client.StorageClientApi;
 import com.diploma.webclient.model.Order;
 import com.diploma.webclient.model.ShirtStoreMnf;
 import com.diploma.webclient.model.Transaction;
-import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.client.HttpClientErrorException;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**

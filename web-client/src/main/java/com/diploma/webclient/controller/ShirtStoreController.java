@@ -20,7 +20,7 @@ import java.security.Principal;
 @AllArgsConstructor
 public class ShirtStoreController {
     /**
-     * Сервис Мастерской
+     * Сервис Ателье ShirtStore
      */
     private final ShirtStoreService shirtStoreService;
 
