@@ -4,17 +4,17 @@ spring:
       client:
         config:
           payment:
-            url: http://localhost:8768/payment
+            url: http://localhost:8765/payment
           patternsew:
-            url: http://localhost:8768/patterns
+            url: http://localhost:8765/patterns
           textile:
-            url: http://localhost:8768/textile
+            url: http://localhost:8765/textile
 
 api:
   basic-uri:
-    payment: http://localhost:8768/payment/
-    patternsew: http://localhost:8768/patterns/
-    textile: http://localhost:8768/textile/
+    payment: http://localhost:0/payment/
+    patternsew: http://localhost:8765/patterns/
+    textile: http://localhost:8765/textile/
 
 shop:
   account:

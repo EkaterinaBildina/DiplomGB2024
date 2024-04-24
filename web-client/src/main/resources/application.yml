@@ -14,3 +14,7 @@ spring:
     username: root
     password: admin
 
+shop:
+  account:
+    number: 3
+
