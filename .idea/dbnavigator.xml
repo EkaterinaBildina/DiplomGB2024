@@ -42,9 +42,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="638eea43-6895-4a14-85cc-af9558c81a68" object-ref="schemas/mysql/tables/patterns_db_2024" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="638eea43-6895-4a14-85cc-af9558c81a68" />

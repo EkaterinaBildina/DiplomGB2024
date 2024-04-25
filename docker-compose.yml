@@ -1,0 +1,55 @@
+version: '3'
+
+services:
+  config-server:
+    image: config-server-image
+    container_name: DiplomGB2024-config-server
+    depends_on:
+      - eureka-server
+    ports:
+      - "8888:8888"
+
+  eureka-server:
+    image: eureka-server-image
+    container_name: DiplomGB2024-eureka-server
+    depends_on:
+      - api-gateway
+    ports:
+      - "8761:8761"
+
+  api-gateway:
+    image: api-gateway-image
+    container_name: DiplomGB2024-api-gateway
+    depends_on:
+      - db-patterns
+      - db-textile
+      - payment-app
+    ports:
+      - "8765:8765"
+
+
+  db-patterns:
+    image: db-patterns-image
+    container_name: DiplomGB2024-db-patterns
+    ports:
+      - "8080:8080"
+
+  db-textile:
+    image: db-textile-image
+    container_name: DiplomGB2024-db-textile
+    ports:
+      - "8081:8081"
+
+
+
+  payment-app:
+    image: payment-app-image
+    container_name: DiplomGB2024-payment-app
+    depends_on:
+      - web-client
+
+  web-client:
+    image: web-client-image
+    container_name: DiplomGB2024-web-client
+    ports:
+      - "8082:8082"
